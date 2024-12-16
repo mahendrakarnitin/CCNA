@@ -1,0 +1,59 @@
+
+
+										
+**  Auto-MDI.
+--  Modern Devices Are Automatically Detects The Data Transmassion.
+
+
+
+** RJ-45. (Register Jack)
+-- RJ-45 Used In Copper Cable. 
+	 ++ Copper Cables. 
+			-- Crossover.
+			-- Straight Throw Cable.
+
+
+** Ethernet Copper Cables. ( Copper Cables ).
+	
+		speed		name			ieee		called-are 	maximum-range
+		10mpbs	ether			802.3i	10base-T		100m
+		100mbps f-ether 	802.3u	100base-T 	100m
+		1gbps		g-ether		802.3ab	1000base-T	100m
+		10gbps  10g-ether 802.3an 10gbase-T		100m
+
+** 3 Types Of Ethernet Cables.
+	
+		++ UTP CABLE. ( Unishield
+		-- Unisheild Twister Pair Cables Nothing Provides To Inside Wires.
+
+		++ STP CABLE. (Straight Throw Cable)
+		-- Straight Throw Cables Inside Wires Covered With Shield. With Silver Cover.
+
+		++ FIBER CABLE.
+		-- Fiber Cables Are Used A Long Connection Network. Because Works With Laser Light
+			 Technology.
+
+		-- Needs To Connect SFP Connecter. ( Small Form Factor Plugable )
+
+
+** 2 Types Of Copper Cables.
+
+	 ++ Straight Throw Cable.
+	 -- Straight Throw Cables Are Data Transmisson Pins Are.
+
+			-----------------------
+			1  transmit 1 receive
+			2  transmit 2 receive
+			3  receive  3 transmit
+			6  receive  6 transmit
+			------------------------
+
+	 ++ Crossover Cable.
+		
+			----------------------
+			1  transmit 3 receive
+			2  transmit 6 receive
+			3  receive  1 transmit
+			6  receive  2 transmit
+			-----------------------
+		
