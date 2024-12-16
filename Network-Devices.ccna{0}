@@ -1,0 +1,37 @@
+
+
+
+															Network Devices.
+															---------------
+
+	0) What Is Computer Netowrk.
+	-- Computer Network Is Digital Communications Network. It Allows To Shares 	 		Resources Between Nodes.
+
+	1) Router.(ISR 1000,ISR,900)
+	-- Router Used For Connectivity Reach Out Of The World.
+		
+
+	2) Switch.(Catalyst 9200)
+	-- That Used For End Hosts Connectify.
+	-- Switch Have Many Interfaces For End Hosts. That Area Called 
+		 Are Local Area Network.
+
+			
+	3) Firewall.(ASA5500-X)
+	-- Firewall Is Prevent Unauthorised Access In Netowrk.   
+
+
+	4) Host. (PC,LAPTOP)
+	-- Hosts Are Called End Hosts. Like ( PC & Mobiles ).
+
+
+												( Overview Of Network )
+																										
+	
+																											* PC - 1 
+																									  	*
+																									 		*
+				[ Internet ] == [ Router ] == [ Firewall ] == [ Switch ]  --- * PC - 2 
+																									 		*
+																											*	 	
+																											*  PC - 3 
