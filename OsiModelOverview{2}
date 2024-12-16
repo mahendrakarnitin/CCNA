@@ -1,0 +1,46 @@
+** Whats Is Networking Model.
+-- Networking Models Catagorize and Provide a Structure For Netoworking Protocols 
+	 And Standards.
+
+
+
+** 2 Types Of (OSI MODEL).
+
+	 OSI MODEL				TCP/IP SUITE
+	----------				------------
+	Application				Application-Presentation-Session [ Combined In One ].
+	Presentation			Transport
+	Session						Internet
+	Transport					Link
+	Network	
+	DataLink
+	Physical
+
+
+
+
+** Application.
+-- Application Layer ( Trying Request And Get Response )
+
+** Presentation Layer.
+-- TLS,SSL ( Data Encryption )
+
+** Session Layer.
+-- Create A Secure Socket Connection To Communicate To Other.
+
+** Transport Layer.
+-- Creates 1460 bytes packets. Because MTU Supports Only 1500
+-- Encapsulate Transport Layer Header
+
+** Network Layer.
+-- Encapsulate (IPV4 HEADER)
+
+** DataLink Layer.
+-- Encapsulate (Ethernet Header) 
+
+** Physical Layer.
+-- Transmit Data Into Wire.
+
+
+
+
