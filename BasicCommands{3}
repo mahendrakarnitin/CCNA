@@ -1,0 +1,50 @@
+
+
+
+** Rollover Cables.
+-- Used To Connect Switch And Router.
+	
+		1 to 8
+		2 to 7
+		3 to 6
+		4 to 5
+		5 to 4
+		6 to 3
+		7 to 2
+		8 to 1
+
+
+
+Router> enable  
+used to enter privillage mode.
+
+Router#>configure terminal
+used to enter global configuration mode.
+
+Router(config)# enable password {password}
+used to configure a password to protect privillage mode.
+
+Router(config)# service password-encryption.
+encrypts the enable password ( and other password ). But Not Safe.
+
+
+Router(config)# enable secret ${password}
+Ecrypts The Password And Cannot Decrypt The Password. Because This Is More Safe.
+
+
+Router(config)# no ${command}
+removes the command
+
+Router(config)# show running-config
+displays the current,active configuration file.
+
+Router(config)# show running-config 
+displays the current configuration file.
+
+
+Router(config)# show startup-config
+after devices get-up this configuration is boot-up
+
+
+Router(config)# write
+copy running-config startup-config	
