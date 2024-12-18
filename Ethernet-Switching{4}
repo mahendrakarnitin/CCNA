@@ -1,0 +1,87 @@
+
+
+																	[  OSI MODEL  ]
+
+
+
+						DATA.
+
+						DATA - L4															> (SEGMENT)
+		
+						DATA - L4 - L3												> (PACKET)
+		
+						L2-TRAILER - DATA - L4 - L3 - L2			> (FRAME)
+
+
+
+																	Ethernet - Frame.
+
+
+** Minimum Size Of Ethernet 46 Bytes. It`s Less Padding Added.
+	
+** Preamble.
+-- 01010101 x 7 = 7 bytes padding 0-1 For Identifying new Packet.
+
+** SFD.
+-- 01010111 x Identifying New Packet Was Arrived.
+
+** Destination.
+-- Destination - Mac.
+
+		Unknown-Mac : FFFF-FFFF-FFFF
+		Known-Mac 	: 25a9::252::5255
+
+** Source-Mac.
+-- Known-Mac-Only. 25a9:3535:5235
+
+** Type & Length.
+-- If Your Packet Is Less Then 1500. Use Type.
+-- If Your Packet Higher Then 1500 . Use Length Property.
+
+** FCS.
+-- Frame Check Sequence Are 4 byte.
+
+
+
+
+
+																
+												[ SWITCH-MAC-ADDRESS MANAGEING ]
+
+
+
+
+										 (FLOAD USING UNKNOWN MAC-ADDRESS IN LAN )
+			
+
+									[ PC - 1 ] -----------[ SW - 1 ] ---------- [ PC - 3 ]
+														[FLOAD]					|      [FLOAD]
+																						|
+																						|[FLOAD]
+																						|
+																				[ PC -2 ]
+
+
+
+
+ ** KNOWN UNICAST.
+ -- Known Mac-address Send Only One Device. Not Flood The Packet.
+
+
+ ** UNKNOWN UNICAST.
+ --	No Exists In Switch Table. Then Switch Flood The Packet Everywhere.
+
+	** MAC - ADDRESS - TABLE.
+
+			MAC 				INT
+		.0001				F0/1
+		.0002  			F0/2
+		.0003 			F0/3
+
+
+	
+
+
+
+
+
