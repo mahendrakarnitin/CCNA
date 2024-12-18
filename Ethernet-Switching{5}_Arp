@@ -1,0 +1,61 @@
+
+
+
+																ARP.
+
+
+* ARP Stands for 'Address Resulation Protocol'
+* ARP is ( Layer 2 Protocol) But That`s Take ( Layer 3 ) Ip Address.
+* Consists Of Two Messages.
+
+
+							ARP REQUEST.
+							ARP REPLY.
+
+
+* ARP Request Is Broadcast. = send to all hosts on the network.
+* ARP Reply is unicast 			= sent to only one host. because every mac-address
+															finding completed.
+
+
+
+
+
+
+
+																[ With ARP How Identifies Host - MAC ]
+
+
+		
+					[ PC - 1 ] --------- [ SWITCH1 ] ----- [ ROUTER ] ----- [ SWITCH2 ] --- [ HOST ]
+
+
+
+
+			ARP REQUEST -  PC - 1 TO SWITCH.
+			ARP REPLY   -  SWITCH1 TO PC-1 ( WITH OWN MAC )
+			
+
+			ARP REQUEST - SWITCH - 1  ( DON`T KNOW MAC HERE )
+			ARP REPLY   - SWITCH1 TO ROUTER  ( IM` NOT ). ATTACH MAC.
+
+
+			ARP REQUEST - ROUTER TO SWITCH2 --- BORADCAST REQUEST LAN.
+			ARP REPLY   - HOST REPLYED. ( HEY IM HERE MY MAC FFFFF).
+
+
+
+
+
+SW1#> show mac address-table.
+SW1#> clear mac address-table dynamic {192.168.1.1}
+
+
+
+		vlan - vlan no.s
+		mac  - host-mac.
+		type - static is typed. dynamic was learned with arp.
+		ports - which port connected.
+
+
+
