@@ -1,0 +1,64 @@
+
+* Three Types Of Ipv4 Address.
+	class A = 2^24 empty address.
+	class B	= 2^16 empty address.
+	class C	= 2^8  empty address.
+
+
+
+
+* Ipv4 Is Created With Binary Bits.
+
+
+	10000000-01000000-00000001-00000000
+
+	     (ip-address : 128.64.1.0)
+	
+
+
+* How To Assign Ip. In Router.
+  
+  ++ Must Know This First.
+		
+		(Think Your Ip Is : 125.28.2.55) /28
+
+     ** Network-Id.
+     	255.255.255.11110000
+	255.255.255.16
+
+	0-16
+	16-31 = network address.
+	32-47
+
+
+     ** Subnetmask.
+	
+	> ip address 192.168.1.24 255.255.255.192
+	/25 = this Is Subnetmask. 255.255.255.192
+
+     ** Broadcast.
+	/28 = /28 In 4Th Octet. And Take It 4th Octet
+	Last-Bit Number.
+
+	128-64-32-16-8-4-2-1
+	1,1,1,1,0,0,0,0 = last-bit-number=16
+
+	0-15
+	16-31
+	32-47
+	48-63 = broadcat 125.28.2.63
+
+
+     ** First-Usable.
+	0-15
+	16-31
+	32-47
+	48-63
+
+	address: 125.28.2.49
+     
+     ** Last-Usable.
+
+	address:125.28.2.62
+	
+	
