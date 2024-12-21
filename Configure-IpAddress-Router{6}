@@ -1,0 +1,13 @@
+
+
+Router>enable
+Router#configuare terminal
+Router#(config)> int g0/1 = select port.
+Router#(config)> description "Connected To Port1"
+Router#(config)> ip address 192.168.1.1 (255.255.255.0 = subnetmask)
+Router#(config)> no shut = by default all ports are shutdown.
+Router#(config)> do show ip int br. ( show port-no & ip & port-status )
+Router#(config)> show interfaces. = in details show results.
+Router#(config)> show interfaces g0/0 specific show result port.
+Router#(config)> show interfaces description. = shows all ports description.
+
